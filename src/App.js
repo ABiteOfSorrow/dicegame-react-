@@ -30,8 +30,8 @@ function App() {
     return (
     <>
         <div>                
-            <Button onClick={rollDice}>Lancer</Button>
-            <Button onClick={resetDice}>réinitialiser</Button>
+            <Button onClick={rollDice} color="blue">Lancer</Button>
+            <Button onClick={resetDice} color="red">réinitialiser</Button>
         </div>    
         <div>            
             <Board name="Moi" color="blue" gameHistory={myGameHistory}/>
