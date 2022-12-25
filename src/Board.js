@@ -1,6 +1,8 @@
 import Dice from './Dice';
 
-function Board({name, color, num, sum, gameHistory}) {
+function Board({name, color, gameHistory}) {
+    let num = gameHistory[gameHistory.length-1] || 1;
+    let sum = gameHistory.reduce((a, b) => a + b, 0);
 
     return (    
         <div>
