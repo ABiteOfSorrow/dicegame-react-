@@ -44,3 +44,9 @@ export default App;
 
 T1. 배열이나 객체같은 참조형 state를 사용할때는 메소드나 할당연산자가 아니라 새로운 값을 만들어서 변경해야 함. 
     - 참조형의 경우 원래 주소값을 가리키기 때문에 리액트에서 변경됬다고 판단하지 않아 렌더링이 이루어지지 않기 때문
+
+3. CSS 파일을 가져올때는 import 후에 바로 파일경로를 쓴다.
+ ex) import './index.css'
+
+ 3-1. CSS 파일을 가져와서 클래스 네임을 사용하려면 중간에 공백이 필요하다.
+ ex)     const className = `Button ${color}`;   => Button.blue or .red

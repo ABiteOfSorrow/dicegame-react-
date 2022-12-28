@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Board from "./Board";
 import Button from "./Button";
+import "./App.css"
 
 // For generate random number of dice
 function randomNumber(n) {
@@ -28,16 +29,16 @@ function App() {
     }
 
     return (
-    <>
+    <div className="App">
         <div>                
-            <Button onClick={rollDice} color="blue">Lancer</Button>
-            <Button onClick={resetDice} color="red">réinitialiser</Button>
+            <Button className="App-button" onClick={rollDice} color="blue">Lancer</Button>
+            <Button className="App-button" onClick={resetDice} color="red">réinitialiser</Button>
         </div>    
         <div>            
             <Board name="Moi" color="blue" gameHistory={myGameHistory}/>
             <Board name="Toi" color="red" gameHistory={otherGameHistory}/>
         </div>
-    </>
+    </div>
     );
 }
 
