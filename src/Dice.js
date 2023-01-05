@@ -10,7 +10,7 @@ import diceRed03 from './assets/dice-red-3.svg';
 import diceRed04 from './assets/dice-red-4.svg';
 import diceRed05 from './assets/dice-red-5.svg';
 import diceRed06 from './assets/dice-red-6.svg';
-
+import "./App.css";
 
 
 const DICE_IMAGES = {
@@ -21,7 +21,7 @@ const DICE_IMAGES = {
 function Dice({color = "blue", num = 1}) {
     const SRC = DICE_IMAGES[color][num - 1];
     const ALT = `dé-${color}-${num}`;
-    return <img src={SRC} alt={ALT} />
+    return <img src={SRC} alt={ALT} className="Dice"/>
 
 }
 

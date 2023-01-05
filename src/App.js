@@ -2,6 +2,7 @@ import { useState } from "react";
 import Board from "./Board";
 import Button from "./Button";
 import "./App.css"
+import diceLogo from './assets/logo.png'
 
 // For generate random number of dice
 function randomNumber(n) {
@@ -30,6 +31,10 @@ function App() {
 
     return (
     <div className="App">
+        <div>
+            <img className="App-logo" src={diceLogo} alt="Dice game logo" />
+            <h1 className="App-title">Dice Game</h1>
+        </div>
         <div>                
             <Button className="App-button" onClick={rollDice} color="blue">Lancer</Button>
             <Button className="App-button" onClick={resetDice} color="red">réinitialiser</Button>

@@ -1,4 +1,4 @@
-import './Button.css';
+import './App.css';
 
 function Button({ children, onClick, color = 'blue', className = '' }) {
 
